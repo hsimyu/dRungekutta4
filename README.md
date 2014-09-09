@@ -1,16 +1,17 @@
 dRungekutta4
 ============
-
 Abstarct Rungekutta4 function for dlang.
 
 How to use
 ============
 まず初めにimportします。
+
 ```dlang
 import rk4;
 ```
 
 次にRunge-Kutta4用の関数を自分で定義します。
+この例は適当です。
 
 ```dlang
 double f1(double[] phase, double[] params) { return phase[3]; }
@@ -50,3 +51,10 @@ double[] res = rungekutta4!(double[])(h, fp, particle, params);
 
 これで1ステップ分更新された値がresに返ります。
 
+動機
+===========
+D言語がいい感じだったので研究に使いたかった。
+
+LICENCE
+===========
+MIT

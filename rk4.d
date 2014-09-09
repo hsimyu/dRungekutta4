@@ -1,3 +1,9 @@
+/**
+  dRungeKutta4
+  Copyright (c) 2014 hoshimi
+  This code is released under the MIT License.
+*/
+
 module rk4;
 
 T[] rungekutta4(T:T[])(T h, T delegate(T[], T[])[] funcs, T[] phase, T[] params){
